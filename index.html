@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio | AI & Data Science</title>
+<style>
+:root{--bg:#0b1020;--panel:#121a2e;--text:#eef2ff;--muted:#a8b3cc;--accent:#83a8ff;--accent2:#b7f0d1}
+*{box-sizing:border-box;scroll-behavior:smooth}
+body{margin:0;font-family:Inter,system-ui,Arial,sans-serif;background:radial-gradient(circle at 80% 5%,#1b2b4d 0,transparent 35%),var(--bg);color:var(--text);line-height:1.65}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1000px,92%);margin:auto}
+nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0;gap:20px}
+.logo{font-weight:800;letter-spacing:.5px;color:var(--accent)}
+.navlinks{display:flex;gap:20px;color:var(--muted);font-size:.95rem;flex-wrap:wrap}
+.navlinks a:hover{color:var(--text)}
+.hero{padding:90px 0 75px;display:grid;grid-template-columns:1.4fr .8fr;gap:30px;align-items:center}
+.tag{color:var(--accent2);font-size:.9rem;letter-spacing:1.5px;text-transform:uppercase}
+h1{font-size:clamp(2.6rem,7vw,4.8rem);line-height:1.08;margin:14px 0}
+h1 span{color:var(--accent)}
+.lead{color:var(--muted);font-size:1.1rem;max-width:620px}
+.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{border:1px solid #415172;padding:11px 17px;border-radius:12px;display:inline-block;font-weight:600}
+.btn.primary{background:var(--accent);color:#0b1020;border-color:var(--accent)}
+.profile{border:1px solid #293858;background:linear-gradient(145deg,#182541,#11192b);padding:28px;border-radius:24px;box-shadow:0 20px 60px #0003}
+.profile .orb{height:140px;width:140px;border-radius:50%;margin:0 auto 20px;background:linear-gradient(145deg,#9bb9ff,#b7f0d1);display:grid;place-items:center;color:#10172a;font-size:3rem;font-weight:800}
+.profile h3{text-align:center;margin:0}
+.profile p{text-align:center;color:var(--muted);margin:5px 0}
+section{padding:55px 0}
+.section-title{font-size:1.9rem;margin:0 0 10px}
+.sub{color:var(--muted);margin:0 0 25px}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.card{background:var(--panel);border:1px solid #253451;border-radius:18px;padding:22px}
+.card h3{margin:0 0 8px}
+.card p{color:var(--muted);margin:0}
+.skills{display:flex;flex-wrap:wrap;gap:10px}
+.skill{background:#182541;border:1px solid #2d4268;padding:8px 13px;border-radius:999px;color:#dbe6ff}
+.project{display:flex;flex-direction:column;gap:12px}
+.project .label{font-size:.8rem;color:var(--accent2);text-transform:uppercase;letter-spacing:1px}
+.project a{color:var(--accent)}
+.timeline{border-left:2px solid #3c5278;padding-left:20px}
+footer{border-top:1px solid #263550;padding:28px 0;color:var(--muted);text-align:center}
+@media(max-width:720px){.hero{grid-template-columns:1fr;padding:55px 0}.profile{max-width:380px}.grid{grid-template-columns:1fr}.navlinks{gap:12px;font-size:.85rem}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav>
+  <a class="logo" href="#">MY PORTFOLIO</a>
+  <div class="navlinks">
+    <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#education">Education</a><a href="#contact">Contact</a>
+  </div>
+</nav>
+<header class="hero">
+  <div>
+    <div class="tag">AI & Data Science Student</div>
+    <h1>Hello, I'm <span>Your Name</span>.</h1>
+    <p class="lead">I'm a curious engineering student exploring technology, coding, and data-driven solutions. I'm learning step by step and building projects that turn ideas into reality.</p>
+    <div class="buttons">
+      <a class="btn primary" href="#projects">Explore my work</a>
+      <a class="btn" href="#contact">Contact me</a>
+    </div>
+  </div>
+  <aside class="profile">
+    <div class="orb">YN</div>
+    <h3>Your Name</h3>
+    <p>Student • Aspiring Developer</p>
+  </aside>
+</header>
+
+<section id="about">
+  <h2 class="section-title">About Me</h2>
+  <p class="sub">A little about my journey.</p>
+  <div class="card">
+    <p>I'm currently pursuing a degree in Artificial Intelligence & Data Science. I enjoy learning new skills, solving problems, and working on creative projects. My current focus is strengthening my programming fundamentals and developing projects that help me grow as a developer.</p>
+  </div>
+</section>
+
+<section id="skills">
+  <h2 class="section-title">Skills & Learning</h2>
+  <p class="sub">Add or update these as you progress.</p>
+  <div class="skills">
+    <span class="skill">Python — Learning</span><span class="skill">HTML & CSS</span><span class="skill">Problem Solving</span><span class="skill">AI & Data Science</span><span class="skill">Git & GitHub — Learning</span>
+  </div>
+</section>
+
+<section id="projects">
+  <h2 class="section-title">Projects</h2>
+  <p class="sub">A showcase of things I've built and explored.</p>
+  <div class="grid">
+    <article class="card project">
+      <div class="label">Web Project</div>
+      <h3>Personal Portfolio</h3>
+      <p>A responsive website to introduce myself, share my skills, and showcase projects.</p>
+      <a href="#" onclick="return false">Project link coming soon ↗</a>
+    </article>
+    <article class="card project">
+      <div class="label">AI / Data Science</div>
+      <h3>Project Title</h3>
+      <p>Replace this with a short explanation of your project, the problem it solves, and tools used.</p>
+      <a href="#" onclick="return false">Add GitHub repository ↗</a>
+    </article>
+  </div>
+</section>
+
+<section id="education">
+  <h2 class="section-title">Education</h2>
+  <div class="card timeline">
+    <h3>Bachelor's Degree — Artificial Intelligence & Data Science</h3>
+    <p>Second-year engineering student</p>
+    <p>College name • Expected graduation year</p>
+  </div>
+</section>
+
+<section id="contact">
+  <h2 class="section-title">Let's Connect</h2>
+  <p class="sub">I'm open to learning opportunities, collaborations, and internships.</p>
+  <div class="buttons">
+    <a class="btn primary" href="mailto:your.email@example.com">Email me</a>
+    <a class="btn" href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+    <a class="btn" href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+  </div>
+</section>
+<footer>© <span id="year"></span> Your Name • Built with HTML & CSS</footer>
+</div>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
